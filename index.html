@@ -1,0 +1,53 @@
+<htmL>
+    <head>
+        <title>ChatWithMe</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="load();">
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#Home"><b class="text-info">ChatWithMe</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#Home"><i class="text-primary">Home</i></a></li>
+                <li><a href="#Chat"><i class="text-primary">Chat</i></a></li>
+              </ul>
+            </div>
+        </nav>
+        <section id="Home">
+            <div class="container-fluid" id="homePage">
+                <div class="row">
+                      <img class="col-xs-12 col-sm-12 col-md-12 col-lg-4" src="logo.png" >
+                      <section>
+                        <p id="About" style="color: white; margin-top: 50px;"><i>ChatWithMe is an App to chat with your friends.<br>
+                        ChatWithMe can talk with anybody around the globe.</i></p>
+                      </section>
+                </div>
+            </div>
+        </section>
+        <section id="Chat">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+            <img src="logo.png" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h3 >See what is happening in the world right now</h3>
+              <h4 >Join Kwitter today</h4>
+              <div class="form-group">
+                <label >User Name:</label>
+                <input type="text" id="user_name" class="form-control" placeholder="Enter username">
+              </div>
+              <button id="login_button" class="btn btn-primary" onclick="addUser();">Log in</button>
+              <br><br>
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</htmL>
